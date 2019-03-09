@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angularjs & Backbonejs Inlämningsuppgift 1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<!-- START SECTION TOP NAVIGATION -->
+    <section class="top_nav" id="top">
+        <div class="container_fluid">          
+            <div class="top_wrap">
+                <div class="social_icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">TERMS</a></li>
+                    </ul>
+                </div>
+                <div class="mail_menu">
+                    <ul>
+                        <li><i class="far fa-envelope"></i></li>
+                        <li><a href="terms.html">info@webmail.com</a></li>
+                    </ul>
+                </div>
+            </div><!--end top_wrap-->
+        </div><!--end container_fluid-->
+    </section>
+<!-- END SECTION TOP NAVIGATION -->
+
+<!-- START SECTION HEADER -->
+    <section class="header">
+        <div class="container_fluid">
+            <div class="header_wrap">
+                <div class="logotype_container">
+                    <img src="images/logotype.svg" height="50px" class="logotype-image" alt="pohat company logotype">
+                </div>
+                <div id="header_lang_select">
+                    <select name="" id="">
+                        <option value="en">EN</option>
+                        <option value="swe">SWE</option>
+                        <option value="nor">NOR</option>
+                        <option value="fin">FIN</option>
+                    </select>
+                </div>
+                <div class="header_phone_number">
+                    <p>+90878 87 878 7</p>
+                </div>
+                <nav>
+                    <ul data-ng-controller="headerNavController">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="quote">
+                    <button type="submit">get a quote</button>
+                </div>
+            </div><!--end header_wrap-->
+        </div><!--end container_fluid-->
+    </section>
+<!-- END SECTION HEADER -->
+
+<!-- START SECTION HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero_text_container">
+                <p>DIGITAL MARKETING</p>
+                <h1>Product Store</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>|</li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+<!-- END SECTION HERO -->
+
+<!-- START SECTION SHIPPING -->
+    <section class="shipping">
+        <div class="container">
+            <div class="shipping_container">
+                <div class="shipping_box">
+                    <tr rowspan="2">
+                    <img src="images/truck.svg" alt="picture on a truck">
+                    <h4>Free Shipping</h4>
+                    <p>Orders over $100</p>
+                </div>
+                <div class="shipping_box">
+                    <img src="images/clock.svg" alt="picture on a clock">
+                    <h4>Free Return</h4>
+                    <p>In 30 days</p>
+                </div>
+                <div class="shipping_box">
+                    <img src="images/lock.svg" alt="picture on a lock">
+                    <h4>100% Secure</h4>
+                    <p>Shipping</p>
+                </div>
+                <div class="shipping_box">
+                    <img src="images/tag.svg" alt="picture on a tag">
+                    <h4>Best Price</h4>
+                    <p>Granted</p>
+                </div>
+            </div><!--end shipping_container-->
+        </div><!--end container-->
+    </section>
+<!-- END SECTION SHIPPING -->
+
+<!-- START SECTION FILTER BOOKS -->
+    <section class="filter_books">
+        <div class="container">
+            <div class="filter_container">
+                <div class="filter_menu_left">
+                    <div class="filter_menu_dots"><a href=""><img src="images/dots.svg" alt=""></a></div>
+                    <div class="filter_menu_bars"><a href=""><img src="images/bars.svg" alt=""></a></div>
+                </div>
+                <div class="filter_menu_right">
+                    <p>Showing 1-12 of 30 results</p>
+                    <select name="filter_by" id="filter_by">
+                        <option value="0" default>Sort by</option>
+                        <option value="thrill">Thrillers</option>
+                        <option value="drama">Drama</option>
+                    </select>
+                    <input type="text" placeholder="Search from here...">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- END SECTION FILTER BOOKS -->
+
+<!-- START SECTION BOOK DISPLAY -->
+    <section class="book_display">
+        <div class="container">
+            <div class="book_display_container">
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+                <div class="book_card">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><img src="images/book_cover.png" alt=""></td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td colspan="2" class="author">Helix Stereo Colorful T-shirt</td>
+                            </tr>
+                            <tr>
+                                <td class="price">$500.00</td><td class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div>
+            </div><!--end book_display_container-->
+        </div><!--end container-->
+    </section>
+<!-- END SECTION BOOK DISPLAY -->
+
+<!-- START SECTION BOOK NAVIGATION -->
+    <section class="book_navigation">
+        <div class="container">
+            <div class="book_navigation_container">
+                <ul>
+                    <li><a href="#"><i class="fas fa-arrow-left"></i></a></li>
+                    <li><a href="#">01</a></li>
+                    <li><a href="#" id="number_two">02</a></li>
+                    <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#"><i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- END SECTION TOP BOOK NAVIGATION -->
+
+<!-- START SECTION FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer_top_container">
+                <div class="footer_left">
+                    <img src="images/logotype_white.svg" height="50px" alt="pohat company logotype">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab itaque eum mollitia est blanditiis placeat architecto! Modi enim quas fuga! Nobis fugiat reprehenderit magni, voluptatibus ullam quaerat? Mollitia consectetur a sunt ducimus rem, repudiandae reprehenderit ullam.</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer_middle">
+                    <h1>More Links<span class="dot">.</span></h1>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Paid CEO</td><td class="td_spacer"></td><td>Services</td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td>Digital Marketing</td><td class="td_spacer"></td><td>Our Team</td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td>Strategy Planning</td><td class="td_spacer"></td><td>News</td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td>Offline CEO</td><td class="td_spacer"></td><td>Shop</td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td>Page Rank Up</td><td class="td_spacer"></td><td>Contact Us</td>
+                            </tr>
+                            <tr class="spacer"></tr>
+                            <tr>
+                                <td>User Panel</td><td class="td_spacer"></td><td>Book Appointment</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="footer_right">
+                    <h1>News Feed<span class="dot">.</span></h1>
+
+                    <div class="footer_right_content">
+                        <img src="images/square.png" alt="">
+                        <p>Lorem ipsum dolor, sit am
+                        et consectetur.
+                        <span>14 july, 2019</span></p>
+                        
+                    </div>
+                    <div class="footer_right_content">
+                        <img src="images/square.png" alt="">
+                        <p>Lorem ipsum dolor, sit am
+                        et consectetur.
+                        <span>14 july, 2019</span></p>
+                    </div>
+                    <div class="footer_right_content">
+                        <img src="images/square.png" alt="">
+                        <p>Lorem ipsum dolor, sit am
+                        et consectetur.
+                        <span>14 july, 2019</span></p>
+                    </div>
+
+                </div>
+            </div><!--end footer_top_container-->
+                <div class="footer_bottom" data-ng-controller="getYear">
+                    <p>Copyright By&copy;<span>NilArtStudio - </span>2019</p>
+                    <button onclick="topFunction()" id="myBtn">back to top</button>
+                </div>
+            
+        </div><!--end container-->
+    </footer>
+ <!-- END SECTION TOP FOOTER -->    
+</body>
+</html>
