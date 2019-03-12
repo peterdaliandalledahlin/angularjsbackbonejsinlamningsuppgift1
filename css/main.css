@@ -584,8 +584,8 @@ footer {
     color: var(--black);
 }
 
-.footer_left ul li i:nth-child(2) {
-    color: var(--black);
+#white {
+    color: #fff;
 }
 
 .footer_middle {
